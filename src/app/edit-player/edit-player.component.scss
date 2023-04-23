@@ -1,0 +1,15 @@
+.profile-picture {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  padding: 5px;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.15);
+  }
+}
+
+.mat-dialog-title {
+  max-width: 60vw;
+}
