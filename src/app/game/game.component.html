@@ -20,7 +20,7 @@
 </div>
 
 <div *ngIf="gameOver" class="gameOver">
-  <img src="./assets/img/game_over.svg" />
+  <img src="assets/img/game_over.svg" />
 </div>
 
 <div *ngIf="!gameOver" class="field">
@@ -29,20 +29,20 @@
     <img
       [ngStyle]="{ 'right.px': i * 5 }"
       *ngFor="let c of [0, 1, 2, 3]; let i = index"
-      src="./../../assets/img/cards/card-cover.png"
+      src="assets/img/cards/card-cover.png"
     />
     <img
       (click)="takeCard()"
       class="top-card"
       style="right: 25px"
-      src="./../../assets/img/cards/card-cover.png"
+      src="assets/img/cards/card-cover.png"
     />
 
     <!--Stack for played Cards-->
     <img
       *ngFor="let card of this.game.payedCards"
       class="payed-card"
-      src="./../../assets/img/cards/{{ card }}.png"
+      src="assets/img/cards/{{ card }}.png"
     />
 
     <!-- Current card (Animation)-->
@@ -51,7 +51,7 @@
       *ngIf="game.pickCardAnimation"
       class="pick-card"
       style="right: 25px"
-      src="./../../assets/img/cards/{{ game.currentCard }}.png"
+      src="assets/img/cards/{{ game.currentCard }}.png"
     />
   </div>
 </div>
@@ -74,5 +74,5 @@
 
 <img
   class="preloadImage"
-  src="./../../assets/img/cards/{{ game.stack[game.stack.length - 1] }}.png"
+  src="assets/img/cards/{{ game.stack[game.stack.length - 1] }}.png"
 />
